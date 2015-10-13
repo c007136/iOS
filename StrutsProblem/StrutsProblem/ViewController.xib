@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7706"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController">
+            <connections>
+                <outlet property="bottomView" destination="3Lg-UQ-kIU" id="73O-t7-dM3"/>
+                <outlet property="topLeftView" destination="k3J-Pt-Rt8" id="uYp-1A-cky"/>
+                <outlet property="topRightView" destination="dSl-CI-Sq4" id="OQ7-Ke-dRk"/>
+                <outlet property="view" destination="iN0-l3-epB" id="y70-mv-cIc"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k3J-Pt-Rt8">
+                    <rect key="frame" x="20" y="20" width="90" height="254"/>
+                    <color key="backgroundColor" red="0.23464647276962303" green="1" blue="0.25726349928140979" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Lg-UQ-kIU">
+                    <rect key="frame" x="20" y="294" width="280" height="254"/>
+                    <color key="backgroundColor" red="0.38106046977295849" green="0.61900305903285058" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dSl-CI-Sq4">
+                    <rect key="frame" x="210" y="20" width="90" height="254"/>
+                    <color key="backgroundColor" red="1" green="0.93048131040141779" blue="0.15102632650529546" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="dSl-CI-Sq4" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="5sC-Rl-k7a"/>
+                <constraint firstItem="dSl-CI-Sq4" firstAttribute="width" secondItem="k3J-Pt-Rt8" secondAttribute="width" id="9GO-lW-uKZ"/>
+                <constraint firstAttribute="bottom" secondItem="3Lg-UQ-kIU" secondAttribute="bottom" constant="20" id="CpT-OU-pw6"/>
+                <constraint firstAttribute="trailing" secondItem="dSl-CI-Sq4" secondAttribute="trailing" constant="20" id="DXd-ZI-mt9"/>
+                <constraint firstItem="dSl-CI-Sq4" firstAttribute="height" secondItem="k3J-Pt-Rt8" secondAttribute="height" id="Iax-r5-7Dt"/>
+                <constraint firstAttribute="trailing" secondItem="3Lg-UQ-kIU" secondAttribute="trailing" constant="20" id="XoQ-OM-Uc9"/>
+                <constraint firstItem="dSl-CI-Sq4" firstAttribute="height" secondItem="3Lg-UQ-kIU" secondAttribute="height" id="fOE-6W-C4J"/>
+                <constraint firstItem="k3J-Pt-Rt8" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="mMm-Wc-ub8"/>
+                <constraint firstItem="3Lg-UQ-kIU" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="r4Y-2G-pSL"/>
+                <constraint firstItem="3Lg-UQ-kIU" firstAttribute="top" secondItem="k3J-Pt-Rt8" secondAttribute="bottom" constant="20" id="thL-NW-td0"/>
+                <constraint firstItem="k3J-Pt-Rt8" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="uUO-fQ-vbJ"/>
+                <constraint firstItem="dSl-CI-Sq4" firstAttribute="leading" secondItem="k3J-Pt-Rt8" secondAttribute="trailing" constant="100" id="ycB-In-P1B"/>
+            </constraints>
+            <point key="canvasLocation" x="353" y="367"/>
+        </view>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
