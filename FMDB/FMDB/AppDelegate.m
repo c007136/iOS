@@ -9,8 +9,6 @@
 #import "AppDelegate.h"
 #import "ViewController.h"
 
-static const NSInteger aa = 10;
-
 @interface AppDelegate ()
 
 @end
