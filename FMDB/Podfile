@@ -1,0 +1,6 @@
+# public pods
+    pod 'FMDB','~> 2.6.2'
+
+target 'FMDB' do
+
+end

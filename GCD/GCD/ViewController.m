@@ -19,7 +19,7 @@
 {
     [super viewDidLoad];
     
-    [self deadLockCase4];
+    [self dispatchQueueSetSpecifiDemo];
 }
 
 - (void)dispatchApplyDemo
@@ -329,6 +329,40 @@
             
             [NSThread sleepForTimeInterval:1];
         }
+    });
+}
+
+- (void)dispatchQueueSetSpecifiDemo
+{
+    static void *queueKey = "queueKey";
+    dispatch_queue_t q = dispatch_queue_create(queueKey, DISPATCH_QUEUE_SERIAL);
+    dispatch_queue_set_specific(q, queueKey, &queueKey, NULL);
+    
+    NSLog(@"current thread is %@", [NSThread currentThread]);
+    
+    if (dispatch_queue_get_specific(q, queueKey))
+    {
+        NSLog(@"current thread is %@ 1_1", [NSThread currentThread]);
+    }
+    else
+    {
+        NSLog(@"current thread is %@ 1_2", [NSThread currentThread]);
+    }
+    [NSThread sleepForTimeInterval:1];
+    
+    dispatch_async(q, ^{
+        NSLog(@"current thread is %@ 2", [NSThread currentThread]);
+        [NSThread sleepForTimeInterval:1];
+        
+        if (dispatch_queue_get_specific(q, queueKey))
+        {
+            NSLog(@"current thread is %@ 2_1", [NSThread currentThread]);
+        }
+        else
+        {
+            NSLog(@"current thread is %@ 2_2", [NSThread currentThread]);
+        }
+        [NSThread sleepForTimeInterval:1];
     });
 }
 
