@@ -19,7 +19,7 @@
 {
     [super viewDidLoad];
     
-    [self dispatchQueueSetSpecifiDemo];
+    [self dispatchQueueSetSpecificDemo];
 }
 
 - (void)dispatchApplyDemo
@@ -332,7 +332,7 @@
     });
 }
 
-- (void)dispatchQueueSetSpecifiDemo
+- (void)dispatchQueueSetSpecificDemo
 {
     static void *queueKey = "queueKey";
     dispatch_queue_t q = dispatch_queue_create(queueKey, DISPATCH_QUEUE_SERIAL);
