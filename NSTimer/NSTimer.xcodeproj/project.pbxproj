@@ -15,6 +15,7 @@
 		7C0C9CE71B82D28400F06064 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C0C9CE51B82D28400F06064 /* LaunchScreen.xib */; };
 		7C0C9CF31B82D28400F06064 /* NSTimerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C0C9CF21B82D28400F06064 /* NSTimerTests.m */; };
 		7C0C9CFE1B82D59600F06064 /* TestObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C0C9CFD1B82D59600F06064 /* TestObject.m */; };
+		E42821671F00E0720023B6D8 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E42821661F00E0720023B6D8 /* DetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,8 @@
 		7C0C9CF21B82D28400F06064 /* NSTimerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSTimerTests.m; sourceTree = "<group>"; };
 		7C0C9CFC1B82D59600F06064 /* TestObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestObject.h; sourceTree = "<group>"; };
 		7C0C9CFD1B82D59600F06064 /* TestObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestObject.m; sourceTree = "<group>"; };
+		E42821651F00E0720023B6D8 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		E42821661F00E0720023B6D8 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +91,8 @@
 				7C0C9CDB1B82D28400F06064 /* AppDelegate.m */,
 				7C0C9CDD1B82D28400F06064 /* ViewController.h */,
 				7C0C9CDE1B82D28400F06064 /* ViewController.m */,
+				E42821651F00E0720023B6D8 /* DetailViewController.h */,
+				E42821661F00E0720023B6D8 /* DetailViewController.m */,
 				7C0C9CFC1B82D59600F06064 /* TestObject.h */,
 				7C0C9CFD1B82D59600F06064 /* TestObject.m */,
 				7C0C9CE01B82D28400F06064 /* Main.storyboard */,
@@ -224,6 +229,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E42821671F00E0720023B6D8 /* DetailViewController.m in Sources */,
 				7C0C9CDF1B82D28400F06064 /* ViewController.m in Sources */,
 				7C0C9CDC1B82D28400F06064 /* AppDelegate.m in Sources */,
 				7C0C9CFE1B82D59600F06064 /* TestObject.m in Sources */,
@@ -422,6 +428,7 @@
 				7C0C9CF81B82D28400F06064 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7C0C9CF91B82D28400F06064 /* Build configuration list for PBXNativeTarget "NSTimerTests" */ = {
 			isa = XCConfigurationList;
@@ -430,6 +437,7 @@
 				7C0C9CFB1B82D28400F06064 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

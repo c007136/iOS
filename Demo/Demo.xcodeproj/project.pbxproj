@@ -15,6 +15,7 @@
 		7CFC45781B39853500BAA0B6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CFC45771B39853500BAA0B6 /* Images.xcassets */; };
 		7CFC457B1B39853500BAA0B6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CFC45791B39853500BAA0B6 /* LaunchScreen.xib */; };
 		7CFC45871B39853600BAA0B6 /* DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CFC45861B39853600BAA0B6 /* DemoTests.m */; };
+		E41D070E1EB8718000634011 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E41D070D1EB8718000634011 /* DetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,8 @@
 		7CFC45801B39853600BAA0B6 /* DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CFC45851B39853600BAA0B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7CFC45861B39853600BAA0B6 /* DemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoTests.m; sourceTree = "<group>"; };
+		E41D070C1EB8718000634011 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		E41D070D1EB8718000634011 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +91,8 @@
 				7CFC456F1B39853500BAA0B6 /* AppDelegate.m */,
 				7CFC45711B39853500BAA0B6 /* ViewController.h */,
 				7CFC45721B39853500BAA0B6 /* ViewController.m */,
+				E41D070C1EB8718000634011 /* DetailViewController.h */,
+				E41D070D1EB8718000634011 /* DetailViewController.m */,
 				7CFC45741B39853500BAA0B6 /* Main.storyboard */,
 				7CFC45771B39853500BAA0B6 /* Images.xcassets */,
 				7CFC45791B39853500BAA0B6 /* LaunchScreen.xib */,
@@ -224,6 +229,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E41D070E1EB8718000634011 /* DetailViewController.m in Sources */,
 				7CFC45731B39853500BAA0B6 /* ViewController.m in Sources */,
 				7CFC45701B39853500BAA0B6 /* AppDelegate.m in Sources */,
 				7C87D7D71BA8134200DA0F56 /* NSDictionary+Extension.m in Sources */,

@@ -12,6 +12,7 @@
 
 #import "ViewController.h"
 #import "TestObject.h"
+#import "DetailViewController.h"
 
 @interface ViewController ()
 
@@ -31,7 +32,12 @@
     //[self testTimerWithoutShedule];
     
     // 有loop
-    [NSThread detachNewThreadSelector:@selector(testTimerSheduleToRunLoop) toTarget:self withObject:nil];
+    //[NSThread detachNewThreadSelector:@selector(testTimerSheduleToRunLoop) toTarget:self withObject:nil];
+    
+    UIButton * button = [[UIButton alloc] initWithFrame:CGRectMake(50, 100, 200, 50)];
+    button.backgroundColor = [UIColor redColor];
+    [button addTarget:self action:@selector(buttonClick) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:button];
 }
 
 - (void)testNonRepeatTimer
@@ -52,7 +58,10 @@
 {
     NSLog(@"testTimerWithoutShedule is called.");
     TestObject * object = [[TestObject alloc] init];
-    NSTimer * timer = [[NSTimer alloc] initWithFireDate:[NSDate dateWithTimeIntervalSinceNow:1] interval:1 target:object selector:@selector(timerAction:) userInfo:nil repeats:NO];
+    NSTimer * timer = [[NSTimer alloc] initWithFireDate:[NSDate dateWithTimeIntervalSinceNow:1] interval:1 target:object selector:@selector(timerAction:) userInfo:nil repeats:YES];
+    
+    // 需要主动add到runloop中
+    [[NSRunLoop currentRunLoop] addTimer:timer forMode:NSDefaultRunLoopMode];
 }
 
 - (void)testTimerSheduleToRunLoop
@@ -70,6 +79,12 @@
     
     // 运行runloop
     [[NSRunLoop currentRunLoop] runUntilDate:[NSDate dateWithTimeIntervalSinceNow:3]];
+}
+
+- (void)buttonClick
+{
+    DetailViewController *vc = [[DetailViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 @end
