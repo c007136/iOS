@@ -67,6 +67,7 @@
 
 - (void)queueInDatabaseDemo
 {
+    // 队列，线程
     [self.dbQueue inDatabase:^(FMDatabase *db) {
         
         NSString *sql = @"INSERT INTO student (uid, name, grade) VALUES ('0407001', '张三', '90')";
