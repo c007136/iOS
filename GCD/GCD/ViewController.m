@@ -19,9 +19,7 @@
 {
     [super viewDidLoad];
     
-    [self dispatchQueueSetSpecificDemo];
-    
-    
+    [self dispatchSyncDemo];
 }
 
 - (void)dispatchApplyDemo
@@ -366,6 +364,33 @@
         }
         [NSThread sleepForTimeInterval:1];
     });
+}
+
+- (void)dispatchSyncDemo
+{
+    NSThread *thread = [[NSThread alloc] initWithTarget:self selector:@selector(dispatchSyncThreadRun) object:nil];
+    [thread start];
+    NSLog(@"thread is %@", thread);
+    
+    for (NSInteger i = 0; i < 10; i++)
+    {
+        dispatch_queue_t q = dispatch_queue_create("com.muyu", DISPATCH_QUEUE_SERIAL);
+        dispatch_sync(q, ^{
+            BOOL b = [NSThread isMainThread];
+            NSLog(@"同步主线程demo %@, block is in main thread : %@", @(i), @(b));
+        });
+    }
+}
+
+- (void)dispatchSyncThreadRun
+{
+    for (NSInteger i = 0; i < 10; i++)
+    {
+        dispatch_queue_t q = dispatch_queue_create("com.muyu", DISPATCH_QUEUE_SERIAL);
+        dispatch_sync(q, ^{
+            NSLog(@"同步子线程demo %@", @(i));
+        });
+    }
 }
 
 - (void)deadLockCase1

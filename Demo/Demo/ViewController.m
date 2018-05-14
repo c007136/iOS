@@ -27,8 +27,11 @@
 
 - (void)buttonClick
 {
-    DetailViewController *vc = [[DetailViewController alloc] init];
-    [self.navigationController pushViewController:vc animated:YES];
+    for (NSInteger i = 0; i < 10; i++)
+    {
+        NSString *uuid = [UIDevice currentDevice].identifierForVendor.UUIDString;
+        NSLog(@"uuid is %@", uuid);
+    }
 }
 
 @end
