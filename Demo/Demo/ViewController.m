@@ -27,11 +27,19 @@
 
 - (void)buttonClick
 {
-    for (NSInteger i = 0; i < 10; i++)
-    {
-        NSString *uuid = [UIDevice currentDevice].identifierForVendor.UUIDString;
-        NSLog(@"uuid is %@", uuid);
-    }
+    NSDictionary *dict = @{
+                           @"1" : @(1),
+                           @"2" : @(2),
+                           @"3" : @(3),
+                           @"4" : @(4)
+                           };
+    [dict enumerateKeysAndObjectsUsingBlock:^(NSString *  _Nonnull key, NSNumber *  _Nonnull value, BOOL * _Nonnull stop) {
+        if ([key isEqualToString:@"1"]) {
+            return;
+        }
+        
+        NSLog(@"key is %@, value is %@", key, value);
+    }];
 }
 
 @end

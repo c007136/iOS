@@ -7,23 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E4467CA520D28E1A00A71303 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4467CA320D28E1A00A71303 /* ViewController.m */; };
+		E4467CB220D2903D00A71303 /* AsynTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4467CB120D2903D00A71303 /* AsynTestViewController.m */; };
+		E4467CB520D2908E00A71303 /* ViewRecordAndMergeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4467CB420D2908E00A71303 /* ViewRecordAndMergeViewController.m */; };
+		E4467CB820D2931F00A71303 /* ItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = E4467CB720D2931F00A71303 /* ItemView.m */; };
 		E4D1A0BB20AAC6B5005857E8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D1A0BA20AAC6B5005857E8 /* AppDelegate.m */; };
-		E4D1A0BE20AAC6B5005857E8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D1A0BD20AAC6B5005857E8 /* ViewController.m */; };
-		E4D1A0C120AAC6B5005857E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4D1A0BF20AAC6B5005857E8 /* Main.storyboard */; };
 		E4D1A0C320AAC6B7005857E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4D1A0C220AAC6B7005857E8 /* Assets.xcassets */; };
-		E4D1A0C620AAC6B7005857E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4D1A0C420AAC6B7005857E8 /* LaunchScreen.storyboard */; };
 		E4D1A0C920AAC6B7005857E8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D1A0C820AAC6B7005857E8 /* main.m */; };
+		FCBCE93AB420A7667EB4E0B4 /* libPods-Persistance.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BF9F648E788D48F2742EB98 /* libPods-Persistance.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		23E48E22B7AA2421F1E4A2ED /* Pods-Persistance.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Persistance.release.xcconfig"; path = "Pods/Target Support Files/Pods-Persistance/Pods-Persistance.release.xcconfig"; sourceTree = "<group>"; };
+		26EDC1B1FBEEE582BBB2606A /* Pods-Persistance.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Persistance.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Persistance/Pods-Persistance.debug.xcconfig"; sourceTree = "<group>"; };
+		3BF9F648E788D48F2742EB98 /* libPods-Persistance.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Persistance.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4467C9D20D28B8000A71303 /* MAPersistanceConfiguration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MAPersistanceConfiguration.h; sourceTree = "<group>"; };
+		E4467CA320D28E1A00A71303 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E4467CA420D28E1A00A71303 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E4467CB020D2903D00A71303 /* AsynTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AsynTestViewController.h; sourceTree = "<group>"; };
+		E4467CB120D2903D00A71303 /* AsynTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AsynTestViewController.m; sourceTree = "<group>"; };
+		E4467CB320D2908E00A71303 /* ViewRecordAndMergeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewRecordAndMergeViewController.h; sourceTree = "<group>"; };
+		E4467CB420D2908E00A71303 /* ViewRecordAndMergeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewRecordAndMergeViewController.m; sourceTree = "<group>"; };
+		E4467CB620D2931F00A71303 /* ItemView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ItemView.h; sourceTree = "<group>"; };
+		E4467CB720D2931F00A71303 /* ItemView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ItemView.m; sourceTree = "<group>"; };
 		E4D1A0B620AAC6B5005857E8 /* Persistance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Persistance.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4D1A0B920AAC6B5005857E8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E4D1A0BA20AAC6B5005857E8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		E4D1A0BC20AAC6B5005857E8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		E4D1A0BD20AAC6B5005857E8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		E4D1A0C020AAC6B5005857E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E4D1A0C220AAC6B7005857E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E4D1A0C520AAC6B7005857E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E4D1A0C720AAC6B7005857E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E4D1A0C820AAC6B7005857E8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -33,17 +43,154 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCBCE93AB420A7667EB4E0B4 /* libPods-Persistance.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		30B575131031A9BF0A53E0CD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				26EDC1B1FBEEE582BBB2606A /* Pods-Persistance.debug.xcconfig */,
+				23E48E22B7AA2421F1E4A2ED /* Pods-Persistance.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		56E745C0408BCD39A3FE1512 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3BF9F648E788D48F2742EB98 /* libPods-Persistance.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E4467C9C20D28AF800A71303 /* MAPersistance */ = {
+			isa = PBXGroup;
+			children = (
+				E4467C9D20D28B8000A71303 /* MAPersistanceConfiguration.h */,
+			);
+			path = MAPersistance;
+			sourceTree = "<group>";
+		};
+		E4467CA020D28E1A00A71303 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				E4467CA120D28E1A00A71303 /* ViewRecordAndMerge */,
+				E4467CA220D28E1A00A71303 /* AsyncTest */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		E4467CA120D28E1A00A71303 /* ViewRecordAndMerge */ = {
+			isa = PBXGroup;
+			children = (
+				E4467CA720D2902600A71303 /* DataCenter */,
+				E4467CA620D2902600A71303 /* ItemView */,
+				E4467CB320D2908E00A71303 /* ViewRecordAndMergeViewController.h */,
+				E4467CB420D2908E00A71303 /* ViewRecordAndMergeViewController.m */,
+			);
+			path = ViewRecordAndMerge;
+			sourceTree = "<group>";
+		};
+		E4467CA220D28E1A00A71303 /* AsyncTest */ = {
+			isa = PBXGroup;
+			children = (
+				E4467CB020D2903D00A71303 /* AsynTestViewController.h */,
+				E4467CB120D2903D00A71303 /* AsynTestViewController.m */,
+			);
+			path = AsyncTest;
+			sourceTree = "<group>";
+		};
+		E4467CA620D2902600A71303 /* ItemView */ = {
+			isa = PBXGroup;
+			children = (
+				E4467CB620D2931F00A71303 /* ItemView.h */,
+				E4467CB720D2931F00A71303 /* ItemView.m */,
+			);
+			path = ItemView;
+			sourceTree = "<group>";
+		};
+		E4467CA720D2902600A71303 /* DataCenter */ = {
+			isa = PBXGroup;
+			children = (
+				E4467CA820D2902600A71303 /* Record */,
+				E4467CAB20D2902600A71303 /* Category */,
+				E4467CAD20D2902600A71303 /* Table */,
+			);
+			path = DataCenter;
+			sourceTree = "<group>";
+		};
+		E4467CA820D2902600A71303 /* Record */ = {
+			isa = PBXGroup;
+			children = (
+				E4467CA920D2902600A71303 /* Item */,
+				E4467CAA20D2902600A71303 /* ItemDetail */,
+			);
+			path = Record;
+			sourceTree = "<group>";
+		};
+		E4467CA920D2902600A71303 /* Item */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Item;
+			sourceTree = "<group>";
+		};
+		E4467CAA20D2902600A71303 /* ItemDetail */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ItemDetail;
+			sourceTree = "<group>";
+		};
+		E4467CAB20D2902600A71303 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				E4467CAC20D2902600A71303 /* ItemView */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		E4467CAC20D2902600A71303 /* ItemView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ItemView;
+			sourceTree = "<group>";
+		};
+		E4467CAD20D2902600A71303 /* Table */ = {
+			isa = PBXGroup;
+			children = (
+				E4467CAE20D2902600A71303 /* Item */,
+				E4467CAF20D2902600A71303 /* ItemDetail */,
+			);
+			path = Table;
+			sourceTree = "<group>";
+		};
+		E4467CAE20D2902600A71303 /* Item */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Item;
+			sourceTree = "<group>";
+		};
+		E4467CAF20D2902600A71303 /* ItemDetail */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ItemDetail;
+			sourceTree = "<group>";
+		};
 		E4D1A0AD20AAC6B5005857E8 = {
 			isa = PBXGroup;
 			children = (
 				E4D1A0B820AAC6B5005857E8 /* Persistance */,
 				E4D1A0B720AAC6B5005857E8 /* Products */,
+				30B575131031A9BF0A53E0CD /* Pods */,
+				56E745C0408BCD39A3FE1512 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +205,13 @@
 		E4D1A0B820AAC6B5005857E8 /* Persistance */ = {
 			isa = PBXGroup;
 			children = (
+				E4467C9C20D28AF800A71303 /* MAPersistance */,
+				E4467CA020D28E1A00A71303 /* Demo */,
 				E4D1A0B920AAC6B5005857E8 /* AppDelegate.h */,
 				E4D1A0BA20AAC6B5005857E8 /* AppDelegate.m */,
-				E4D1A0BC20AAC6B5005857E8 /* ViewController.h */,
-				E4D1A0BD20AAC6B5005857E8 /* ViewController.m */,
-				E4D1A0BF20AAC6B5005857E8 /* Main.storyboard */,
+				E4467CA420D28E1A00A71303 /* ViewController.h */,
+				E4467CA320D28E1A00A71303 /* ViewController.m */,
 				E4D1A0C220AAC6B7005857E8 /* Assets.xcassets */,
-				E4D1A0C420AAC6B7005857E8 /* LaunchScreen.storyboard */,
 				E4D1A0C720AAC6B7005857E8 /* Info.plist */,
 				E4D1A0C820AAC6B7005857E8 /* main.m */,
 			);
@@ -78,6 +225,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E4D1A0CC20AAC6B7005857E8 /* Build configuration list for PBXNativeTarget "Persistance" */;
 			buildPhases = (
+				799FC2A93D9ABFCC43674322 /* [CP] Check Pods Manifest.lock */,
 				E4D1A0B220AAC6B5005857E8 /* Sources */,
 				E4D1A0B320AAC6B5005857E8 /* Frameworks */,
 				E4D1A0B420AAC6B5005857E8 /* Resources */,
@@ -128,45 +276,48 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E4D1A0C620AAC6B7005857E8 /* LaunchScreen.storyboard in Resources */,
 				E4D1A0C320AAC6B7005857E8 /* Assets.xcassets in Resources */,
-				E4D1A0C120AAC6B5005857E8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		799FC2A93D9ABFCC43674322 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Persistance-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E4D1A0B220AAC6B5005857E8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E4D1A0BE20AAC6B5005857E8 /* ViewController.m in Sources */,
+				E4467CA520D28E1A00A71303 /* ViewController.m in Sources */,
+				E4467CB220D2903D00A71303 /* AsynTestViewController.m in Sources */,
 				E4D1A0C920AAC6B7005857E8 /* main.m in Sources */,
+				E4467CB820D2931F00A71303 /* ItemView.m in Sources */,
 				E4D1A0BB20AAC6B5005857E8 /* AppDelegate.m in Sources */,
+				E4467CB520D2908E00A71303 /* ViewRecordAndMergeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		E4D1A0BF20AAC6B5005857E8 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E4D1A0C020AAC6B5005857E8 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		E4D1A0C420AAC6B7005857E8 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E4D1A0C520AAC6B7005857E8 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		E4D1A0CA20AAC6B7005857E8 /* Debug */ = {
@@ -281,32 +432,42 @@
 		};
 		E4D1A0CD20AAC6B7005857E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26EDC1B1FBEEE582BBB2606A /* Pods-Persistance.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 5JQJ6KEHZ8;
 				INFOPLIST_FILE = Persistance/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = muyu.Persistance;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "6243e5e9-76ca-4305-b153-e28bc46dfc6f";
+				PROVISIONING_PROFILE_SPECIFIER = DebugAllApp;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		E4D1A0CE20AAC6B7005857E8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23E48E22B7AA2421F1E4A2ED /* Pods-Persistance.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 5JQJ6KEHZ8;
 				INFOPLIST_FILE = Persistance/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = muyu.Persistance;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "6243e5e9-76ca-4305-b153-e28bc46dfc6f";
+				PROVISIONING_PROFILE_SPECIFIER = DebugAllApp;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
