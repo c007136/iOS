@@ -19,7 +19,11 @@
 {
     [super viewDidLoad];
     
-    [self dispatchSyncDemo];
+    [self dispatchAsyncBarrierDemo];
+    
+    //[self dispatchSyncBarrierDemo];
+    
+    //[self dispatchSyncDemo];
 }
 
 - (void)dispatchApplyDemo
@@ -71,7 +75,14 @@
     });
 }
 
-- (void)dispatchBarrierAsyncDemo
+/*
+ * dispatch_barrier_sync 和 dispatch_barrier_async 比较
+ * 共同点： 都会等待barrier函数前面的任务完成，在barrier函数中的任务，然后在执行barrier函数后面的任务
+ * 不同点：
+ * dispatch_barrier_sync 执行完barrier函数中的任务，才会继续执行接下来的代码，然后插入barrier函数后面的任务
+ * dispatch_barrier_async 插入barrier函数前面的任务后，不会等待barrier函数中的任务，继续插入barrier函数后面的任务，其等待的特性体现在任务真正执行的过程中
+ */
+- (void)dispatchSyncBarrierDemo
 {
     dispatch_queue_t q = dispatch_queue_create("com.muyu", DISPATCH_QUEUE_CONCURRENT);
     dispatch_async(q, ^{
@@ -90,11 +101,46 @@
         NSLog(@"------barrier----- out");
     });
     
+    NSLog(@"aaaaa");
     dispatch_async(q, ^{
         NSLog(@"33 in %@", [NSThread currentThread]);
         [NSThread sleepForTimeInterval:1];
         NSLog(@"33 out");
     });
+    
+    NSLog(@"bbbbb");
+    dispatch_async(q, ^{
+        NSLog(@"44 %@", [NSThread currentThread]);
+    });
+}
+
+- (void)dispatchAsyncBarrierDemo
+{
+    dispatch_queue_t q = dispatch_queue_create("com.muyu", DISPATCH_QUEUE_CONCURRENT);
+    dispatch_async(q, ^{
+        NSLog(@"11 in %@", [NSThread currentThread]);
+        [NSThread sleepForTimeInterval:2];
+        NSLog(@"11 out");
+    });
+    dispatch_async(q, ^{
+        NSLog(@"22 %@", [NSThread currentThread]);
+    });
+    
+    // 等前面的执行完后，再执行后面的
+    dispatch_barrier_async(q, ^{
+        NSLog(@"------barrier----- in");
+        [NSThread sleepForTimeInterval:1];
+        NSLog(@"------barrier----- out");
+    });
+    
+    NSLog(@"aaaaa");
+    dispatch_async(q, ^{
+        NSLog(@"33 in %@", [NSThread currentThread]);
+        [NSThread sleepForTimeInterval:1];
+        NSLog(@"33 out");
+    });
+    
+    NSLog(@"bbbbb");
     dispatch_async(q, ^{
         NSLog(@"44 %@", [NSThread currentThread]);
     });
