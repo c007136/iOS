@@ -27,7 +27,7 @@
     
     [self p_createTable];
     
-    [self queueInTransactionDemo];
+    [self insertDBWithArgumentsInArray];
 }
 
 - (void)dealloc
@@ -49,6 +49,21 @@
     {
         NSLog(@"insert demo failed %@", [self.db lastError]);
     }
+}
+
+- (void)insertDBWithArgumentsInArray
+{
+    NSString *sql = @"INSERT INTO student (uid, name, grade) VALUES (?, ?, ?)";
+    BOOL b = [self.db executeUpdate:sql withArgumentsInArray:@[@"040701", @"zhangsan", @"90"]];
+    if (b)
+    {
+        NSLog(@"insert demo success");
+    }
+    else
+    {
+        NSLog(@"insert demo failed %@", [self.db lastError]);
+    }
+    
 }
 
 - (void)deleteDBDemo
