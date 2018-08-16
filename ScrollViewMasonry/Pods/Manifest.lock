@@ -1,0 +1,21 @@
+PODS:
+  - Masonry (1.1.0)
+  - MCCategory/UIView (6)
+
+DEPENDENCIES:
+  - Masonry
+  - MCCategory/UIView
+
+SPEC REPOS:
+  "git@gitlab.91jkys.com:iOS/KangshengPods/KKPods/Specs.git":
+    - MCCategory
+  https://github.com/cocoapods/specs.git:
+    - Masonry
+
+SPEC CHECKSUMS:
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MCCategory: 1c94bbd625da29ad1128fab4aad06f5c0bb953a8
+
+PODFILE CHECKSUM: fc4c4a175470da39ae532ba6717a2ed7d8816b86
+
+COCOAPODS: 1.5.2

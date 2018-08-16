@@ -27,7 +27,8 @@
     
     [self p_createTable];
     
-    [self insertDBWithArgumentsInArray];
+    //[self insertDBWithArgumentsInDictionary];
+    [self selectDBWithArgumentsInVAList];
 }
 
 - (void)dealloc
@@ -51,10 +52,10 @@
     }
 }
 
-- (void)insertDBWithArgumentsInArray
+- (void)insertDBWithArgumentsInVAList
 {
     NSString *sql = @"INSERT INTO student (uid, name, grade) VALUES (?, ?, ?)";
-    BOOL b = [self.db executeUpdate:sql withArgumentsInArray:@[@"040701", @"zhangsan", @"90"]];
+    BOOL b = [self.db executeUpdate:sql, @"040701", @"zhangsan", @"90"];
     if (b)
     {
         NSLog(@"insert demo success");
@@ -63,7 +64,37 @@
     {
         NSLog(@"insert demo failed %@", [self.db lastError]);
     }
-    
+}
+
+- (void)insertDBWithArgumentsInDictionary
+{
+    NSString *sql = @"INSERT INTO student (uid, name, grade) VALUES (:uid, :name, :grade)";
+    NSDictionary *dict = @{
+                           @"uid" : @"040701",
+                           @"name" : @"zhangsan",
+                           @"grade" : @"90"
+                           };
+    BOOL b = [self.db executeUpdate:sql withParameterDictionary:dict];
+    if (b)
+    {
+        NSLog(@"insert demo success");
+    }
+    else
+    {
+        NSLog(@"insert demo failed %@", [self.db lastError]);
+    }
+}
+
+- (void)selectDBWithArgumentsInVAList
+{
+    NSString *sql = @"SELECT * FROM student WHERE grade = ?";
+    FMResultSet *resultSet = [self.db executeQuery:sql, @"90"];
+    while ([resultSet next])
+    {
+        NSString *uid = [resultSet stringForColumn:@"uid"];
+        NSString *name = [resultSet stringForColumn:@"name"];
+        NSLog(@"uid = %@, name = %@", uid, name);
+    }
 }
 
 - (void)deleteDBDemo

@@ -1,0 +1,15 @@
+# Uncomment this line to define a global platform for your project
+# platform :ios, '9.0'
+
+source 'git@gitlab.91jkys.com:iOS/KangshengPods/KKPods/Specs.git'
+source 'https://github.com/CocoaPods/Specs.git'
+
+use_frameworks!
+inhibit_all_warnings!
+
+target 'ChartDemo' do
+    
+    # pod "PNChart"
+    pod "Charts"
+
+end
