@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "Masonry.h"
 
 @interface ViewController ()
 <
@@ -26,7 +27,16 @@
     [super viewDidLoad];
     
     [self.view addSubview:self.tableView];
-    self.tableView.frame = CGRectMake(0, 64, self.view.frame.size.width, self.view.frame.size.height-64);
+    
+    [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.width.bottom.equalTo(self.view);
+        if (@available(iOS 11.0, *)) {
+            make.top.equalTo(self.view.mas_safeAreaLayoutGuideTop);
+        } else {
+            make.top.equalTo(self.mas_topLayoutGuideBottom);
+        }
+    }];
+    //self.tableView.frame = CGRectMake(0, 64, self.view.frame.size.width, self.view.frame.size.height-64);
 }
 
 #pragma mark - UITableViewDelegate and UITableViewDataSource

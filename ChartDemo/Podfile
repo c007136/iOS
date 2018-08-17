@@ -9,7 +9,7 @@ inhibit_all_warnings!
 
 target 'ChartDemo' do
     
-    # pod "PNChart"
-    pod "Charts"
+    pod 'Charts'
+    pod 'Masonry', '1.1.0'
 
 end

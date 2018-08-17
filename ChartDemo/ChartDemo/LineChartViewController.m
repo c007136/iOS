@@ -31,7 +31,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor whiteColor];
+    self.view.backgroundColor = [UIColor clearColor];
     
     [self.view addSubview:self.chartView];
     [self.view addSubview:self.time1Label];
@@ -49,7 +49,7 @@
     
     CGFloat width = self.view.frame.size.width;
     self.chartView.frame = CGRectMake(0, 100, width, 150);
-    self.time1Label.frame = CGRectMake(40, 100+135, 60, 20);
+    self.time1Label.frame = CGRectMake(40, 100+125, 60, 20);
     self.time2Label.frame = CGRectMake(width*2/5, 100+135, 60, 20);
     self.time3Label.frame = CGRectMake(width*3/5, 100+135, 60, 20);
     self.time4Label.frame = CGRectMake(width-50, 100+135, 60, 20);
@@ -95,7 +95,7 @@
 {
     if (_chartView == nil) {
         _chartView = [[LineChartView alloc] init];
-        _chartView.backgroundColor = [UIColor clearColor];
+        _chartView.backgroundColor = [UIColor lightGrayColor];
         _chartView.maxVisibleCount = 120;
         _chartView.pinchZoomEnabled = NO;
         _chartView.drawGridBackgroundEnabled = NO;
@@ -112,7 +112,6 @@
         _chartView.xAxis.drawLabelsEnabled = YES;
         _chartView.xAxis.valueFormatter = self;
         _chartView.xAxis.labelCount = 4;
-        //_chartView.xAxis.centerAxisLabelsEnabled = YES;
         _chartView.xAxis.labelFont = [UIFont systemFontOfSize:10];
         
         _chartView.leftAxis.axisLineColor = [UIColor blueColor];
