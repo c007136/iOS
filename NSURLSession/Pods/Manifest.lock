@@ -1,0 +1,16 @@
+PODS:
+  - ZBToastHUD (1)
+
+DEPENDENCIES:
+  - ZBToastHUD (= 1)
+
+SPEC REPOS:
+  "git@gitlab.91jkys.com:iOS/KangshengPods/KKPods/Specs.git":
+    - ZBToastHUD
+
+SPEC CHECKSUMS:
+  ZBToastHUD: 14627682cb315f97980c55a7090bd8fa3a7f9523
+
+PODFILE CHECKSUM: fe76d5645b993b52f862478a9f79e3cc99aa4715
+
+COCOAPODS: 1.5.2

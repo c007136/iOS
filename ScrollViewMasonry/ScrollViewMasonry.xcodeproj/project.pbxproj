@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		671DD0D9567F3E3F0D78B4B8 /* libPods-ScrollViewMasonry.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 57808D33CC5F1D65CC8C91A8 /* libPods-ScrollViewMasonry.a */; };
+		E42D7021212D568600324B51 /* ThreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E42D7020212D568600324B51 /* ThreeViewController.m */; };
+		E42D7024212D60A800324B51 /* FourViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E42D7023212D60A800324B51 /* FourViewController.m */; };
 		E474DA852122D16F0087E4D7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E474DA842122D16F0087E4D7 /* AppDelegate.m */; };
 		E474DA882122D16F0087E4D7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E474DA872122D16F0087E4D7 /* ViewController.m */; };
 		E474DA8B2122D16F0087E4D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E474DA892122D16F0087E4D7 /* Main.storyboard */; };
@@ -25,6 +27,10 @@
 /* Begin PBXFileReference section */
 		3CD2F4238CCF572308E41F27 /* Pods-ScrollViewMasonry.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScrollViewMasonry.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ScrollViewMasonry/Pods-ScrollViewMasonry.debug.xcconfig"; sourceTree = "<group>"; };
 		57808D33CC5F1D65CC8C91A8 /* libPods-ScrollViewMasonry.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ScrollViewMasonry.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E42D701F212D568600324B51 /* ThreeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreeViewController.h; sourceTree = "<group>"; };
+		E42D7020212D568600324B51 /* ThreeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThreeViewController.m; sourceTree = "<group>"; };
+		E42D7022212D60A800324B51 /* FourViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FourViewController.h; sourceTree = "<group>"; };
+		E42D7023212D60A800324B51 /* FourViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FourViewController.m; sourceTree = "<group>"; };
 		E474DA802122D16F0087E4D7 /* ScrollViewMasonry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScrollViewMasonry.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E474DA832122D16F0087E4D7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E474DA842122D16F0087E4D7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -121,6 +127,10 @@
 				E474DB34212464AF0087E4D7 /* Second3View.m */,
 				E474DB36212464BB0087E4D7 /* Second4View.h */,
 				E474DB37212464BB0087E4D7 /* Second4View.m */,
+				E42D701F212D568600324B51 /* ThreeViewController.h */,
+				E42D7020212D568600324B51 /* ThreeViewController.m */,
+				E42D7022212D60A800324B51 /* FourViewController.h */,
+				E42D7023212D60A800324B51 /* FourViewController.m */,
 			);
 			path = ScrollViewMasonry;
 			sourceTree = "<group>";
@@ -226,6 +236,8 @@
 				E474DB38212464BB0087E4D7 /* Second4View.m in Sources */,
 				E474DA852122D16F0087E4D7 /* AppDelegate.m in Sources */,
 				E474DB29212461D90087E4D7 /* OneViewController.m in Sources */,
+				E42D7024212D60A800324B51 /* FourViewController.m in Sources */,
+				E42D7021212D568600324B51 /* ThreeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

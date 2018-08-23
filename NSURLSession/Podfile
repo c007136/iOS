@@ -1,0 +1,11 @@
+# Uncomment this line to define a global platform for your project
+platform :ios, '8.0'
+
+source 'git@gitlab.91jkys.com:iOS/KangshengPods/KKPods/Specs.git'
+source 'https://github.com/CocoaPods/Specs.git'
+
+target 'NSURLSession' do
+  
+  pod 'ZBToastHUD', '1'
+ 
+end

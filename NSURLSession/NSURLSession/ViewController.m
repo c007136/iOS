@@ -1,8 +1,8 @@
 //
 //  ViewController.m
-//  ScrollViewMasonry
+//  NSURLSession
 //
-//  Created by muyu on 2018/8/14.
+//  Created by muyu on 2018/8/22.
 //  Copyright © 2018年 muyu. All rights reserved.
 //
 
@@ -16,6 +16,7 @@
 
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) NSArray *tableViewDatas;
+
 
 @end
 
@@ -93,21 +94,13 @@
     if (_tableViewDatas == nil) {
         _tableViewDatas = @[
                             @{
-                                @"title" : @"scrollView not nest",
-                                @"class" : @"OneViewController"
+                                @"title" : @"easy use",
+                                @"class" : @"EasyUseViewController"
                                 },
                             @{
-                                @"title" : @"scrollView nest",
-                                @"class" : @"SecondViewController"
+                                @"title" : @"delegate queue",
+                                @"class" : @"DelegateQueueViewController"
                                 },
-                            @{
-                                @"title" : @"update constraint by content view",
-                                @"class" : @"ThreeViewController"
-                                },
-                            @{
-                                @"title" : @"update constraint",
-                                @"class" : @"FourViewController"
-                                }
                             ];
     }
     return _tableViewDatas;

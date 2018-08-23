@@ -1,15 +1,15 @@
 //
-//  Second1View.m
+//  FourViewController.m
 //  ScrollViewMasonry
 //
-//  Created by muyu on 2018/8/15.
+//  Created by muyu on 2018/8/22.
 //  Copyright © 2018年 muyu. All rights reserved.
 //
 
-#import "Second1View.h"
+#import "FourViewController.h"
 #import <Masonry.h>
 
-@interface Second1View ()
+@interface FourViewController ()
 
 @property (nonatomic, strong) UIScrollView *scrollView;
 @property (nonatomic, strong) UILabel *titleLabel;
@@ -19,52 +19,73 @@
 
 @end
 
-@implementation Second1View
+@implementation FourViewController
 
-- (instancetype)init
+- (void)viewDidLoad
 {
-    self = [super init];
-    if (self) {
-        self.backgroundColor = [UIColor whiteColor];
-        
-        [self addSubview:self.scrollView];
-        [self.scrollView addSubview:self.titleLabel];
-        [self.scrollView addSubview:self.actionButton];
-        [self.scrollView addSubview:self.blueView];
-        [self.scrollView addSubview:self.redView];
-    }
-    return self;
+    [super viewDidLoad];
+    self.view.backgroundColor = [UIColor whiteColor];
+    
+    [self.view addSubview:self.scrollView];
+    
+    [self.scrollView addSubview:self.titleLabel];
+    [self.scrollView addSubview:self.actionButton];
+    [self.scrollView addSubview:self.blueView];
+    [self.scrollView addSubview:self.redView];
+    
+    [self layoutAllSubViews];
 }
 
-- (void)layoutSubviews
+- (void)layoutAllSubViews
 {
-    [super layoutSubviews];
-    
-    [self.scrollView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.edges.equalTo(self);
+    [self.scrollView mas_updateConstraints:^(MASConstraintMaker *make) {
+        make.left.width.bottom.equalTo(self.view);
+        if (@available(iOS 11.0, *)) {
+            make.top.equalTo(self.view.mas_safeAreaLayoutGuideTop);
+        }
     }];
     
-    [self.titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+    [self.titleLabel mas_updateConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(@20);
         make.width.equalTo(@100);
         make.top.equalTo(@20);
         make.height.equalTo(@40);
     }];
     
-    [self.actionButton mas_makeConstraints:^(MASConstraintMaker *make) {
+    [self.actionButton mas_updateConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(@20);
         make.width.equalTo(@100);
         make.top.equalTo(self.titleLabel.mas_bottom).offset(30);
         make.height.equalTo(@40);
     }];
     
-    [self.blueView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.equalTo(self).offset(20);
-        make.right.equalTo(self).offset(-20);
-        make.top.equalTo(self.actionButton.mas_bottom).offset(500);
-        make.height.equalTo(@100);
-        make.bottom.equalTo(self.scrollView).offset(-20);
-    }];
+    if (self.redView.hidden == YES)
+    {
+        [self.blueView mas_updateConstraints:^(MASConstraintMaker *make) {
+            make.left.equalTo(self.view).offset(20);
+            make.right.equalTo(self.view).offset(-20);
+            make.top.equalTo(self.actionButton.mas_bottom).offset(500);
+            make.height.equalTo(@100);
+            make.bottom.equalTo(self.scrollView).offset(-20);
+        }];
+    }
+    else
+    {
+        [self.blueView mas_updateConstraints:^(MASConstraintMaker *make) {
+            make.left.equalTo(self.view).offset(40);
+            make.right.equalTo(self.view).offset(-40);
+            make.top.equalTo(self.actionButton.mas_bottom).offset(500);
+            make.height.equalTo(@100);
+        }];
+        
+        [self.redView mas_updateConstraints:^(MASConstraintMaker *make) {
+            make.left.equalTo(self.view).offset(20);
+            make.right.equalTo(self.view).offset(-20);
+            make.top.equalTo(self.blueView.mas_bottom).offset(30);
+            make.height.equalTo(@200);
+            make.bottom.equalTo(self.scrollView).offset(-20);
+        }];
+    }
 }
 
 - (void)onTapAction
@@ -72,21 +93,7 @@
     NSLog(@"....");
     
     self.redView.hidden = NO;
-    
-    [self.blueView mas_updateConstraints:^(MASConstraintMaker *make) {
-        make.left.equalTo(self).offset(40);
-        make.right.equalTo(self).offset(-40);
-        make.top.equalTo(self.actionButton.mas_bottom).offset(500);
-        make.height.equalTo(@100);
-    }];
-    
-    [self.redView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.equalTo(self).offset(20);
-        make.right.equalTo(self).offset(-20);
-        make.top.equalTo(self.blueView.mas_bottom).offset(30);
-        make.height.equalTo(@200);
-        make.bottom.equalTo(self.scrollView).offset(-20);
-    }];
+    [self layoutAllSubViews];
 }
 
 - (UIScrollView *)scrollView
