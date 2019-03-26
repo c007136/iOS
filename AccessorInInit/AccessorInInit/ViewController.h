@@ -2,8 +2,8 @@
 //  ViewController.h
 //  AccessorInInit
 //
-//  Created by miniu on 15/7/25.
-//  Copyright (c) 2015年 miniu. All rights reserved.
+//  Created by muyu on 2018/11/29.
+//  Copyright © 2018 muyu. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
