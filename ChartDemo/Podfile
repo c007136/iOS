@@ -4,12 +4,13 @@
 source 'git@gitlab.91jkys.com:iOS/KangshengPods/KKPods/Specs.git'
 source 'https://github.com/CocoaPods/Specs.git'
 
-use_frameworks!
+#use_frameworks!
+use_modular_headers!
 inhibit_all_warnings!
 
 target 'ChartDemo' do
     
     pod 'Charts'
-    pod 'Masonry', '1.1.0'
+    pod 'Masonry', '1.1.0', :modular_headers => false
 
 end

@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4E70AC150A7D69D98BD80D30 /* Pods_ChartDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAA0849B21845943CFE129CF /* Pods_ChartDemo.framework */; };
 		E474DB062123DA3F0087E4D7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E474DB052123DA3F0087E4D7 /* AppDelegate.m */; };
 		E474DB092123DA3F0087E4D7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E474DB082123DA3F0087E4D7 /* ViewController.m */; };
 		E474DB0C2123DA3F0087E4D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E474DB0A2123DA3F0087E4D7 /* Main.storyboard */; };
@@ -16,11 +15,12 @@
 		E474DB142123DA410087E4D7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E474DB132123DA410087E4D7 /* main.m */; };
 		E474DB21212400B20087E4D7 /* LineChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E474DB20212400B20087E4D7 /* LineChartViewController.m */; };
 		E474DB24212400C10087E4D7 /* BarChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E474DB23212400C10087E4D7 /* BarChartViewController.m */; };
+		E7AB38FA62CDEA860D6579DA /* libPods-ChartDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 78B6696AD8111FEB4FA71D9D /* libPods-ChartDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5EC7B8071459F70720DC1C28 /* Pods-ChartDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChartDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChartDemo/Pods-ChartDemo.release.xcconfig"; sourceTree = "<group>"; };
-		AAA0849B21845943CFE129CF /* Pods_ChartDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChartDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		78B6696AD8111FEB4FA71D9D /* libPods-ChartDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ChartDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E474DB012123DA3F0087E4D7 /* ChartDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChartDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E474DB042123DA3F0087E4D7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E474DB052123DA3F0087E4D7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -44,7 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E70AC150A7D69D98BD80D30 /* Pods_ChartDemo.framework in Frameworks */,
+				E7AB38FA62CDEA860D6579DA /* libPods-ChartDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,7 +63,7 @@
 		DABEA1A0DE0FB048710415F2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				AAA0849B21845943CFE129CF /* Pods_ChartDemo.framework */,
+				78B6696AD8111FEB4FA71D9D /* libPods-ChartDemo.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -118,7 +118,6 @@
 				E474DAFD2123DA3F0087E4D7 /* Sources */,
 				E474DAFE2123DA3F0087E4D7 /* Frameworks */,
 				E474DAFF2123DA3F0087E4D7 /* Resources */,
-				1D67465D69471D69D7FEEB48 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -176,26 +175,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1D67465D69471D69D7FEEB48 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-ChartDemo/Pods-ChartDemo-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
-				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ChartDemo/Pods-ChartDemo-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		47542BBF266F7865F3A49692 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -373,6 +352,12 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Charts\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Masonry\"",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = muyu.ChartDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "ChartDemo/ChartDemo-Bridging-Header.h";
@@ -393,6 +378,12 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Charts\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Masonry\"",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = muyu.ChartDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
