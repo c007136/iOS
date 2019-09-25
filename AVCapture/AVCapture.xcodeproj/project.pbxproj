@@ -1,0 +1,611 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BB47B02C2A74A677CCA93982 /* libPods-AVCapture.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 519E452217CDB161856592CC /* libPods-AVCapture.a */; };
+		E414D04C232106EB00553C65 /* FlyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E414D04B232106EB00553C65 /* FlyViewController.m */; };
+		E414D0502321FF6A00553C65 /* FlyFaceImage.m in Sources */ = {isa = PBXBuildFile; fileRef = E414D04F2321FF6A00553C65 /* FlyFaceImage.m */; };
+		E414D0552322374B00553C65 /* libdlib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E414D0522322374B00553C65 /* libdlib.a */; };
+		E414D05A2322376600553C65 /* DlibViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E414D0592322376600553C65 /* DlibViewController.m */; };
+		E414D91923223AE800553C65 /* dlib in Resources */ = {isa = PBXBuildFile; fileRef = E414D91823223AE800553C65 /* dlib */; };
+		E414D91E232249F700553C65 /* DlibWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = E414D91D232249F700553C65 /* DlibWrapper.mm */; };
+		E414D92023224A5B00553C65 /* shape_predictor_68_face_landmarks.dat in Resources */ = {isa = PBXBuildFile; fileRef = E414D91F23224A5B00553C65 /* shape_predictor_68_face_landmarks.dat */; };
+		E414D92223224FBA00553C65 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E414D92123224FBA00553C65 /* CoreImage.framework */; };
+		E414D92423224FC300553C65 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E414D92323224FC300553C65 /* Accelerate.framework */; };
+		E414D92623224FCD00553C65 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E414D92523224FCD00553C65 /* QuartzCore.framework */; };
+		E414D92823224FD900553C65 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E414D92723224FD900553C65 /* ImageIO.framework */; };
+		E414D92A23224FE300553C65 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E414D92923224FE300553C65 /* CoreMedia.framework */; };
+		E414D92C23224FED00553C65 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E414D92B23224FED00553C65 /* CoreVideo.framework */; };
+		E414D92E23224FF700553C65 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E414D92D23224FF600553C65 /* AVFoundation.framework */; };
+		E461771C23151F7E00BC36B9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E461771B23151F7E00BC36B9 /* AppDelegate.m */; };
+		E461771F23151F7E00BC36B9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E461771E23151F7E00BC36B9 /* ViewController.m */; };
+		E461772223151F7E00BC36B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E461772023151F7E00BC36B9 /* Main.storyboard */; };
+		E461772423151F8000BC36B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E461772323151F8000BC36B9 /* Assets.xcassets */; };
+		E461772723151F8000BC36B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E461772523151F8000BC36B9 /* LaunchScreen.storyboard */; };
+		E461772A23151F8000BC36B9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E461772923151F8000BC36B9 /* main.m */; };
+		E46177322315218100BC36B9 /* CaptureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E46177312315218100BC36B9 /* CaptureViewController.m */; };
+		E46177352315264000BC36B9 /* UIViewController+KKAuthorization.m in Sources */ = {isa = PBXBuildFile; fileRef = E46177342315264000BC36B9 /* UIViewController+KKAuthorization.m */; };
+		E46177382315272B00BC36B9 /* NSBundle+KKAppName.m in Sources */ = {isa = PBXBuildFile; fileRef = E46177362315272B00BC36B9 /* NSBundle+KKAppName.m */; };
+		E47D3BB32325ED340063AFA6 /* FaceCanvas.m in Sources */ = {isa = PBXBuildFile; fileRef = E47D3BB22325ED340063AFA6 /* FaceCanvas.m */; };
+		E4F3ADA1232F6A020097BCA7 /* IDLFaceSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4F3AD9C232F6A020097BCA7 /* IDLFaceSDK.framework */; };
+		E4F3ADA2232F6A020097BCA7 /* idl-license.face-ios in Resources */ = {isa = PBXBuildFile; fileRef = E4F3AD9E232F6A020097BCA7 /* idl-license.face-ios */; };
+		E4F3ADA3232F6A020097BCA7 /* com.baidu.idl.face.model.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E4F3AD9F232F6A020097BCA7 /* com.baidu.idl.face.model.bundle */; };
+		E4F3ADA4232F6A020097BCA7 /* com.baidu.idl.face.faceSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E4F3ADA0232F6A020097BCA7 /* com.baidu.idl.face.faceSDK.bundle */; };
+		E4F3ADA6232F6A410097BCA7 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E4F3ADA5232F6A410097BCA7 /* libc++.tbd */; };
+		E4F3ADA9232F6A780097BCA7 /* BaiduViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4F3ADA8232F6A780097BCA7 /* BaiduViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		519E452217CDB161856592CC /* libPods-AVCapture.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AVCapture.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D882C92A00EC6C377B2F8E27 /* Pods-AVCapture.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AVCapture.debug.xcconfig"; path = "Target Support Files/Pods-AVCapture/Pods-AVCapture.debug.xcconfig"; sourceTree = "<group>"; };
+		E414D04A232106EB00553C65 /* FlyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlyViewController.h; sourceTree = "<group>"; };
+		E414D04B232106EB00553C65 /* FlyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlyViewController.m; sourceTree = "<group>"; };
+		E414D04E2321FF6A00553C65 /* FlyFaceImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlyFaceImage.h; sourceTree = "<group>"; };
+		E414D04F2321FF6A00553C65 /* FlyFaceImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlyFaceImage.m; sourceTree = "<group>"; };
+		E414D0522322374B00553C65 /* libdlib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libdlib.a; sourceTree = "<group>"; };
+		E414D0582322376600553C65 /* DlibViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DlibViewController.h; sourceTree = "<group>"; };
+		E414D0592322376600553C65 /* DlibViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DlibViewController.m; sourceTree = "<group>"; };
+		E414D91823223AE800553C65 /* dlib */ = {isa = PBXFileReference; lastKnownFileType = folder; path = dlib; sourceTree = "<group>"; };
+		E414D91A232249D900553C65 /* DlibWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DlibWrapper.h; sourceTree = "<group>"; };
+		E414D91D232249F700553C65 /* DlibWrapper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DlibWrapper.mm; sourceTree = "<group>"; };
+		E414D91F23224A5B00553C65 /* shape_predictor_68_face_landmarks.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = shape_predictor_68_face_landmarks.dat; sourceTree = "<group>"; };
+		E414D92123224FBA00553C65 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		E414D92323224FC300553C65 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		E414D92523224FCD00553C65 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		E414D92723224FD900553C65 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		E414D92923224FE300553C65 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		E414D92B23224FED00553C65 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		E414D92D23224FF600553C65 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		E461771723151F7E00BC36B9 /* AVCapture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AVCapture.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E461771A23151F7E00BC36B9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E461771B23151F7E00BC36B9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E461771D23151F7E00BC36B9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E461771E23151F7E00BC36B9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E461772123151F7E00BC36B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E461772323151F8000BC36B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E461772623151F8000BC36B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E461772823151F8000BC36B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E461772923151F8000BC36B9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E46177302315218100BC36B9 /* CaptureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CaptureViewController.h; sourceTree = "<group>"; };
+		E46177312315218100BC36B9 /* CaptureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CaptureViewController.m; sourceTree = "<group>"; };
+		E46177332315264000BC36B9 /* UIViewController+KKAuthorization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+KKAuthorization.h"; sourceTree = "<group>"; };
+		E46177342315264000BC36B9 /* UIViewController+KKAuthorization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+KKAuthorization.m"; sourceTree = "<group>"; };
+		E46177362315272B00BC36B9 /* NSBundle+KKAppName.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+KKAppName.m"; sourceTree = "<group>"; };
+		E46177372315272B00BC36B9 /* NSBundle+KKAppName.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+KKAppName.h"; sourceTree = "<group>"; };
+		E47D3BB12325ED340063AFA6 /* FaceCanvas.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FaceCanvas.h; sourceTree = "<group>"; };
+		E47D3BB22325ED340063AFA6 /* FaceCanvas.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FaceCanvas.m; sourceTree = "<group>"; };
+		E4F3AD9C232F6A020097BCA7 /* IDLFaceSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IDLFaceSDK.framework; sourceTree = "<group>"; };
+		E4F3AD9D232F6A020097BCA7 /* FaceParameterConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceParameterConfig.h; sourceTree = "<group>"; };
+		E4F3AD9E232F6A020097BCA7 /* idl-license.face-ios */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "idl-license.face-ios"; sourceTree = "<group>"; };
+		E4F3AD9F232F6A020097BCA7 /* com.baidu.idl.face.model.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = com.baidu.idl.face.model.bundle; sourceTree = "<group>"; };
+		E4F3ADA0232F6A020097BCA7 /* com.baidu.idl.face.faceSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = com.baidu.idl.face.faceSDK.bundle; sourceTree = "<group>"; };
+		E4F3ADA5232F6A410097BCA7 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		E4F3ADA7232F6A780097BCA7 /* BaiduViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaiduViewController.h; sourceTree = "<group>"; };
+		E4F3ADA8232F6A780097BCA7 /* BaiduViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaiduViewController.m; sourceTree = "<group>"; };
+		E808EE67FC0A0F8FC8EB9CD0 /* Pods-AVCapture.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AVCapture.release.xcconfig"; path = "Target Support Files/Pods-AVCapture/Pods-AVCapture.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E461771423151F7E00BC36B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4F3ADA6232F6A410097BCA7 /* libc++.tbd in Frameworks */,
+				E414D92E23224FF700553C65 /* AVFoundation.framework in Frameworks */,
+				E414D92C23224FED00553C65 /* CoreVideo.framework in Frameworks */,
+				E414D92A23224FE300553C65 /* CoreMedia.framework in Frameworks */,
+				E414D92823224FD900553C65 /* ImageIO.framework in Frameworks */,
+				E414D92623224FCD00553C65 /* QuartzCore.framework in Frameworks */,
+				E414D92423224FC300553C65 /* Accelerate.framework in Frameworks */,
+				E4F3ADA1232F6A020097BCA7 /* IDLFaceSDK.framework in Frameworks */,
+				E414D92223224FBA00553C65 /* CoreImage.framework in Frameworks */,
+				E414D0552322374B00553C65 /* libdlib.a in Frameworks */,
+				BB47B02C2A74A677CCA93982 /* libPods-AVCapture.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		305C6731D9E0874A5E3C6489 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D882C92A00EC6C377B2F8E27 /* Pods-AVCapture.debug.xcconfig */,
+				E808EE67FC0A0F8FC8EB9CD0 /* Pods-AVCapture.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		77E16EE7035E57767DD8642B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E4F3ADA5232F6A410097BCA7 /* libc++.tbd */,
+				E414D92D23224FF600553C65 /* AVFoundation.framework */,
+				E414D92B23224FED00553C65 /* CoreVideo.framework */,
+				E414D92923224FE300553C65 /* CoreMedia.framework */,
+				E414D92723224FD900553C65 /* ImageIO.framework */,
+				E414D92523224FCD00553C65 /* QuartzCore.framework */,
+				E414D92323224FC300553C65 /* Accelerate.framework */,
+				E414D92123224FBA00553C65 /* CoreImage.framework */,
+				519E452217CDB161856592CC /* libPods-AVCapture.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E414D04D2321FF3600553C65 /* Fly */ = {
+			isa = PBXGroup;
+			children = (
+				E414D04E2321FF6A00553C65 /* FlyFaceImage.h */,
+				E414D04F2321FF6A00553C65 /* FlyFaceImage.m */,
+			);
+			path = Fly;
+			sourceTree = "<group>";
+		};
+		E414D0512322374B00553C65 /* DLib */ = {
+			isa = PBXGroup;
+			children = (
+				E414D91F23224A5B00553C65 /* shape_predictor_68_face_landmarks.dat */,
+				E414D91823223AE800553C65 /* dlib */,
+				E414D0522322374B00553C65 /* libdlib.a */,
+			);
+			path = DLib;
+			sourceTree = "<group>";
+		};
+		E414D90F232238C600553C65 /* DLibTool */ = {
+			isa = PBXGroup;
+			children = (
+				E414D91A232249D900553C65 /* DlibWrapper.h */,
+				E414D91D232249F700553C65 /* DlibWrapper.mm */,
+				E47D3BB12325ED340063AFA6 /* FaceCanvas.h */,
+				E47D3BB22325ED340063AFA6 /* FaceCanvas.m */,
+			);
+			path = DLibTool;
+			sourceTree = "<group>";
+		};
+		E461770E23151F7E00BC36B9 = {
+			isa = PBXGroup;
+			children = (
+				E461771923151F7E00BC36B9 /* AVCapture */,
+				E461771823151F7E00BC36B9 /* Products */,
+				305C6731D9E0874A5E3C6489 /* Pods */,
+				77E16EE7035E57767DD8642B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E461771823151F7E00BC36B9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E461771723151F7E00BC36B9 /* AVCapture.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E461771923151F7E00BC36B9 /* AVCapture */ = {
+			isa = PBXGroup;
+			children = (
+				E4F3AD9B232F6A020097BCA7 /* BaiduFace */,
+				E414D0512322374B00553C65 /* DLib */,
+				E414D90F232238C600553C65 /* DLibTool */,
+				E414D04D2321FF3600553C65 /* Fly */,
+				E46177372315272B00BC36B9 /* NSBundle+KKAppName.h */,
+				E46177362315272B00BC36B9 /* NSBundle+KKAppName.m */,
+				E46177332315264000BC36B9 /* UIViewController+KKAuthorization.h */,
+				E46177342315264000BC36B9 /* UIViewController+KKAuthorization.m */,
+				E461771A23151F7E00BC36B9 /* AppDelegate.h */,
+				E461771B23151F7E00BC36B9 /* AppDelegate.m */,
+				E461771D23151F7E00BC36B9 /* ViewController.h */,
+				E461771E23151F7E00BC36B9 /* ViewController.m */,
+				E4F3ADA7232F6A780097BCA7 /* BaiduViewController.h */,
+				E4F3ADA8232F6A780097BCA7 /* BaiduViewController.m */,
+				E46177302315218100BC36B9 /* CaptureViewController.h */,
+				E46177312315218100BC36B9 /* CaptureViewController.m */,
+				E414D0582322376600553C65 /* DlibViewController.h */,
+				E414D0592322376600553C65 /* DlibViewController.m */,
+				E414D04A232106EB00553C65 /* FlyViewController.h */,
+				E414D04B232106EB00553C65 /* FlyViewController.m */,
+				E461772023151F7E00BC36B9 /* Main.storyboard */,
+				E461772323151F8000BC36B9 /* Assets.xcassets */,
+				E461772523151F8000BC36B9 /* LaunchScreen.storyboard */,
+				E461772823151F8000BC36B9 /* Info.plist */,
+				E461772923151F8000BC36B9 /* main.m */,
+			);
+			path = AVCapture;
+			sourceTree = "<group>";
+		};
+		E4F3AD9B232F6A020097BCA7 /* BaiduFace */ = {
+			isa = PBXGroup;
+			children = (
+				E4F3AD9C232F6A020097BCA7 /* IDLFaceSDK.framework */,
+				E4F3AD9D232F6A020097BCA7 /* FaceParameterConfig.h */,
+				E4F3AD9E232F6A020097BCA7 /* idl-license.face-ios */,
+				E4F3AD9F232F6A020097BCA7 /* com.baidu.idl.face.model.bundle */,
+				E4F3ADA0232F6A020097BCA7 /* com.baidu.idl.face.faceSDK.bundle */,
+			);
+			path = BaiduFace;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E461771623151F7E00BC36B9 /* AVCapture */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E461772D23151F8000BC36B9 /* Build configuration list for PBXNativeTarget "AVCapture" */;
+			buildPhases = (
+				38828F28E5CBF99EEC5E45AD /* [CP] Check Pods Manifest.lock */,
+				E461771323151F7E00BC36B9 /* Sources */,
+				E461771423151F7E00BC36B9 /* Frameworks */,
+				E461771523151F7E00BC36B9 /* Resources */,
+				F0F741D3731A0EB29EB8708F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AVCapture;
+			productName = AVCapture;
+			productReference = E461771723151F7E00BC36B9 /* AVCapture.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E461770F23151F7E00BC36B9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = muyu;
+				TargetAttributes = {
+					E461771623151F7E00BC36B9 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = E461771223151F7E00BC36B9 /* Build configuration list for PBXProject "AVCapture" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E461770E23151F7E00BC36B9;
+			productRefGroup = E461771823151F7E00BC36B9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E461771623151F7E00BC36B9 /* AVCapture */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E461771523151F7E00BC36B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E461772723151F8000BC36B9 /* LaunchScreen.storyboard in Resources */,
+				E4F3ADA3232F6A020097BCA7 /* com.baidu.idl.face.model.bundle in Resources */,
+				E4F3ADA4232F6A020097BCA7 /* com.baidu.idl.face.faceSDK.bundle in Resources */,
+				E461772423151F8000BC36B9 /* Assets.xcassets in Resources */,
+				E4F3ADA2232F6A020097BCA7 /* idl-license.face-ios in Resources */,
+				E461772223151F7E00BC36B9 /* Main.storyboard in Resources */,
+				E414D91923223AE800553C65 /* dlib in Resources */,
+				E414D92023224A5B00553C65 /* shape_predictor_68_face_landmarks.dat in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		38828F28E5CBF99EEC5E45AD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AVCapture-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F0F741D3731A0EB29EB8708F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AVCapture/Pods-AVCapture-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AVCapture/Pods-AVCapture-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AVCapture/Pods-AVCapture-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E461771323151F7E00BC36B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4F3ADA9232F6A780097BCA7 /* BaiduViewController.m in Sources */,
+				E414D91E232249F700553C65 /* DlibWrapper.mm in Sources */,
+				E461771F23151F7E00BC36B9 /* ViewController.m in Sources */,
+				E46177382315272B00BC36B9 /* NSBundle+KKAppName.m in Sources */,
+				E47D3BB32325ED340063AFA6 /* FaceCanvas.m in Sources */,
+				E46177322315218100BC36B9 /* CaptureViewController.m in Sources */,
+				E46177352315264000BC36B9 /* UIViewController+KKAuthorization.m in Sources */,
+				E461772A23151F8000BC36B9 /* main.m in Sources */,
+				E461771C23151F7E00BC36B9 /* AppDelegate.m in Sources */,
+				E414D0502321FF6A00553C65 /* FlyFaceImage.m in Sources */,
+				E414D05A2322376600553C65 /* DlibViewController.m in Sources */,
+				E414D04C232106EB00553C65 /* FlyViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E461772023151F7E00BC36B9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E461772123151F7E00BC36B9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E461772523151F8000BC36B9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E461772623151F8000BC36B9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E461772B23151F8000BC36B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E461772C23151F8000BC36B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E461772E23151F8000BC36B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D882C92A00EC6C377B2F8E27 /* Pods-AVCapture.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 5JQJ6KEHZ8;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AVCapture/BaiduFace",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					DLIB_JPEG_SUPPORT,
+					DLIB_NO_GUI_SUPPORT,
+					DDLIB_USE_BLAS,
+					DLIB_USE_LAPACK,
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${SRCROOT}/AVCapture/DLib\"",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/MCCategory\"",
+					"\"${PODS_ROOT}/Headers/Public/ZBToastHUD\"",
+				);
+				INFOPLIST_FILE = AVCapture/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AVCapture/DLib",
+				);
+				OTHER_CFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kangmeng.prescription;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = DebugAllApp;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E461772F23151F8000BC36B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E808EE67FC0A0F8FC8EB9CD0 /* Pods-AVCapture.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 5JQJ6KEHZ8;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AVCapture/BaiduFace",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					DLIB_JPEG_SUPPORT,
+					DLIB_NO_GUI_SUPPORT,
+					NDEBUG,
+					DDLIB_USE_BLAS,
+					DLIB_USE_LAPACK,
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${SRCROOT}/AVCapture/DLib\"",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/MCCategory\"",
+					"\"${PODS_ROOT}/Headers/Public/ZBToastHUD\"",
+				);
+				INFOPLIST_FILE = AVCapture/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AVCapture/DLib",
+				);
+				OTHER_CFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kangmeng.prescription;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = DebugAllApp;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E461771223151F7E00BC36B9 /* Build configuration list for PBXProject "AVCapture" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E461772B23151F8000BC36B9 /* Debug */,
+				E461772C23151F8000BC36B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E461772D23151F8000BC36B9 /* Build configuration list for PBXNativeTarget "AVCapture" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E461772E23151F8000BC36B9 /* Debug */,
+				E461772F23151F8000BC36B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E461770F23151F7E00BC36B9 /* Project object */;
+}

@@ -1,0 +1,30 @@
+PODS:
+  - MCCategory (6):
+    - MCCategory/NSObject (= 6)
+    - MCCategory/UIColor (= 6)
+    - MCCategory/UIDevice (= 6)
+    - MCCategory/UIImage (= 6)
+    - MCCategory/UIView (= 6)
+  - MCCategory/NSObject (6)
+  - MCCategory/UIColor (6)
+  - MCCategory/UIDevice (6)
+  - MCCategory/UIImage (6)
+  - MCCategory/UIView (6)
+  - ZBToastHUD (2)
+
+DEPENDENCIES:
+  - MCCategory
+  - ZBToastHUD
+
+SPEC REPOS:
+  "git@gitlab.91jkys.com:iOS/KangshengPods/KKPods/Specs.git":
+    - MCCategory
+    - ZBToastHUD
+
+SPEC CHECKSUMS:
+  MCCategory: 1c94bbd625da29ad1128fab4aad06f5c0bb953a8
+  ZBToastHUD: cb09bec260bd172feed338c660bad60af69146ae
+
+PODFILE CHECKSUM: 7d39695f0288c715172c8d0ca1dec41046266e0d
+
+COCOAPODS: 1.7.4
